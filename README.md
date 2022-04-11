@@ -1,7 +1,8 @@
 # Social-Networking-Website
 <h3>Software Development Project</h3>
 <p>A social networking site for students and teachers at Can Tho University</p>
-<ul>Functions performed:
+<h3>Functions performed:</h3>
+<ul>
   <li>Register</li>
   <li>Login</li>
   <li>Logout</li>
