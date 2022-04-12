@@ -1,0 +1,91 @@
+.friend_tag {
+    box-shadow: 1px 1px 3px #264777;
+    background-color: #EEF0F5 !important;
+    width           : 100%;
+    height          : 70px;
+    border-radius   : 10px;
+    display         : flex;
+    margin          : auto;
+    align-items     : center;
+    margin-bottom   : 25px;
+    font-family     : "oswald";
+
+
+    .avt_friend_request {
+        width        : 55px;
+        height       : 55px;
+        border-radius: 50%;
+        margin-left  : 10px;
+        margin-right : 15px;
+        object-fit   : cover;
+    }
+
+    .userinfo {
+        margin     : auto;
+        margin-left: -1%;
+
+        p {
+            text-transform: capitalize;
+            font-size     : 17px;
+            font-weight   : bold;
+            text-align    : left;
+            margin        : auto;
+            margin-left   : -1%;
+            font-family   : "oswald";
+            cursor        : pointer;
+
+        }
+
+        span {
+            //text-transform   : capitalize;
+            font-size        : 15px;
+            // font-weight   : bold;
+            text-align       : left;
+            margin           : auto;
+            margin-left      : -1%;
+            font-family      : "oswald";
+            cursor           : pointer;
+        }
+    }
+
+
+    .friend_button {
+        margin-right: 10px;
+
+
+        &>button {
+            width           : 80px;
+            height          : 25px;
+            border          : none;
+            border-radius   : 10px;
+            background-color: #0d47a1;
+            color           : white;
+            margin-right    : 5px;
+            font-weight     : bold;
+            font-size       : 13px;
+            cursor          : pointer;
+            font-family     : "oswald";
+        }
+        :hover{
+            background-color: #0b326d;
+        }
+
+    }
+}
+
+@media all and(max-width: 600px) {
+    .friend_tag {
+        background-color: #ffff;
+        box-shadow      : 5px 5px 5px lightblue;
+        border-radius   : 6px;
+        height          : 60px;
+
+
+        .avt_friend_request {
+            width : 50px;
+            height: 50px;
+
+        }
+
+    }
+}

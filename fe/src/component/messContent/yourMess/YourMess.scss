@@ -1,0 +1,36 @@
+ .your_mess_content {
+     display: flex;
+     height : auto;
+     width  : 100%;
+     padding: 5px;
+
+     ._avt {
+         width        : 50px;
+         height       : 50px;
+         object-fit   : cover;
+         border-radius: 50%;
+         border       : none;
+         margin-right : 10px;
+
+     }
+
+     .your_mess {
+         width     : fit-content;
+         flex      : 1;
+         max-width : 80%;
+         margin-top: 5px;
+
+         .your_mess_detail {
+             width           : fit-content;
+             background-color: #EAEAEA;
+             margin-bottom   : 10px;
+             padding         : 7px;
+             border-radius   : 12px;
+             text-align      : center;
+             font-size       : 17px;
+             font-family     : "oswald";
+             min-width       : 50px;
+
+         }
+     }
+ }

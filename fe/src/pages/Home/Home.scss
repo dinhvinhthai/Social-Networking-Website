@@ -1,0 +1,52 @@
+.home-maincontainer {
+  display: flex;
+  margin-top: 100px;
+  padding: 0 10px;
+  justify-content: center;
+
+  .center {
+    & > p{
+      font-size: 20px;
+      font-family: "Oswald";
+      text-align: center;
+    }
+  }
+
+  .rightbar {
+    display: none;
+  }
+
+  .leftbar {
+    display: none;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .home-maincontainer {
+    gap: 10px;
+
+    .center {
+    }
+    .rightbar {
+      width: 350px;
+      display: block;
+    }
+  }
+}
+
+@media all and (min-width: 1050px) {
+  .home-maincontainer {
+    padding: 0 200px;
+    gap: 30px;
+    .center {
+    }
+
+    .rightbar {
+      display: block;
+    }
+
+    .leftbar {
+      display: block;
+    }
+  }
+}

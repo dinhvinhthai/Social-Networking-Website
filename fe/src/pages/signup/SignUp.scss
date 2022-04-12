@@ -1,0 +1,335 @@
+.signup_container {
+  width      : 100%;
+  align-items: center;
+  min-height : 100vh;
+  padding-top: 100px;
+
+  .signup_box {
+    width                : 55%;
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    min-width            : 600px;
+    background-color     : #ffffff;
+    flex-direction       : column;
+    height               : 600px;
+    margin               : auto;
+    border-radius        : 30px;
+    position             : fixed;
+    top                  : 50%;
+    left                 : 50%;
+    -webkit-transform    : translate(-50%, -50%);
+    transform            : translate(-50%, -50%);
+
+    .signup_tag {
+      width                    : 100%;
+      height                   : 100%;
+      margin                   : auto;
+      display                  : grid;
+      background-color         : #3399ff;
+      border-top-left-radius   : 30px;
+      border-bottom-left-radius: 30px;
+      padding                  : 40px;
+
+      .logo {
+        display: flex;
+
+        &>img {
+          width: 80px;
+        }
+
+        &>p {
+          font-size  : 35px;
+          font-weight: bold;
+          margin     : auto;
+          margin-left: 5px;
+          color      : #0d47a1;
+        }
+      }
+
+      .input {
+        width           : 100%;
+        margin-top      : 15px;
+        margin-bottom   : 5px;
+        display         : flex;
+        background-color: #ececec;
+        padding         : 1px 5px;
+        border-radius   : 2rem;
+        align-items     : center;
+        gap             : 10px;
+        height          : fit-content;
+
+        .icon {
+          display         : flex;
+          justify-content : center;
+          align-items     : center;
+          height          : 40px;
+          width           : 40px;
+          background-color: #ffffff;
+          border-radius   : 50%;
+          color           : black;
+          cursor          : pointer;
+        }
+
+        &>input {
+          flex                      : 1;
+          border                    : none;
+          font-size                 : 15px;
+          background-color          : transparent;
+          width                     : 90%;
+          height                    : 40px;
+          border-top-right-radius   : 2rem;
+          border-bottom-right-radius: 2rem;
+          padding                   : 10px;
+          margin-right              : -1%;
+        }
+
+        &>input:focus {
+          outline: none;
+        }
+      }
+
+      .gender_dateOfbirth {
+        display: flex;
+
+        .input_gender {
+          width           : 90%;
+          margin-top      : 15px;
+          margin-bottom   : 5px;
+          margin-right    : 10px;
+          display         : flex;
+          background-color: #ececec;
+          padding         : 1px 5px;
+          border-radius   : 2rem;
+          align-items     : center;
+          gap             : 10px;
+          height          : fit-content;
+          border          : none;
+
+          .icon {
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            height          : 40px;
+            width           : 40px;
+            background-color: #ffffff;
+            border-radius   : 50%;
+            color           : black;
+            cursor          : pointer;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &>select {
+            border          : none;
+            flex            : 1;
+            font-size       : 15px;
+            background-color: transparent;
+            height          : 40px;
+            text-align      : center;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        .input_dateOfbirth {
+          width           : 90%;
+          margin-top      : 15px;
+          margin-bottom   : 5px;
+          margin-left     : 10px;
+          display         : flex;
+          background-color: #ececec;
+          padding         : 1px 5px;
+          border-radius   : 2rem;
+          align-items     : center;
+          gap             : 10px;
+          height          : fit-content;
+
+          .icon {
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            height          : 40px;
+            width           : 40px;
+            background-color: #ffffff;
+            border-radius   : 50%;
+            color           : black;
+            cursor          : pointer;
+          }
+
+          &>input {
+            flex            : 1;
+            border          : none;
+            font-size       : 15px;
+            background-color: transparent;
+            height          : 40px;
+            text-align      : center;
+          }
+
+          &>input:focus {
+            outline: none;
+          }
+        }
+      }
+
+      &>button {
+        width           : 100%;
+        height          : 45px;
+        border-radius   : 30px;
+        background-color: #ffffff;
+        color           : black;
+        font-size       : 15px;
+        border          : none;
+        margin-top      : 30px;
+        cursor          : pointer;
+
+        &:hover {
+          background-color: #0d47a1;
+          color           : #ffffff;
+
+        }
+      }
+
+      &>a {
+        color          : #ffffff;
+        margin-top     : 12px;
+        text-align     : center;
+        text-decoration: none;
+        &:hover{
+          color: #0d47a1;
+        }
+      }
+    }
+
+    .join_us {
+      display                  : grid;
+      width                    : 100%;
+      border-top-left-radius   : 30px;
+      border-bottom-left-radius: 30px;
+      padding                  : 0 20px 0 20px;
+      color                    : #0d47a1;
+      height                   : 70%;
+      margin                   : auto;
+
+      p {
+        text-align   : center;
+        margin       : auto;
+        margin-bottom: 40px;
+        font-size    : 40px;
+        font-weight  : bold;
+        padding-top  : 10px;
+      }
+
+      .join_us_tag {
+        margin         : auto;
+        margin-bottom  : 30px;
+        display        : flex;
+        padding        : 1px 5px;
+        align-items    : center;
+        gap            : 10px;
+        height         : fit-content;
+        //color        : #FFFFFF;
+
+        .join_us_icon {
+          display         : flex;
+          justify-content : center;
+          align-items     : center;
+          height          : 45px;
+          width           : 45px;
+          border-radius   : 20%;
+          cursor          : pointer;
+          color           : #ffffff;
+          background-color: #0d47a1;
+        }
+      }
+
+      .join_us_smile {
+        margin         : auto;
+        margin-bottom  : 50px;
+        display        : flex;
+        padding        : 1px 5px;
+        align-items    : center;
+        gap            : 10px;
+        height         : fit-content;
+        //color        : #FFFFFF;
+
+        .join_us_icon {
+          background-color: #0d47a1;
+          display         : flex;
+          justify-content : center;
+          align-items     : center;
+          height          : 45px;
+          width           : 45px;
+          border-radius   : 20%;
+          color           : #ffffff;
+          cursor          : pointer;
+        }
+      }
+    }
+  }
+}
+
+@media all and(max-width: 550px) {
+  .signup_container {
+    width           : 540px;
+    background-color: #ffffff;
+    padding-top     : 0px;
+
+    .signup_box {
+      background-color : #ffffff;
+      display          : flex;
+      width            : 75%;
+      position         : fixed;
+      top              : 50%;
+      left             : 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform        : translate(-50%, -50%);
+      min-width        : 100px;
+
+      .join_us {
+        display: none;
+      }
+
+      .signup_tag {
+        padding-top              : 30px;
+        width                    : 100%;
+        margin                   : auto;
+        display                  : grid;
+        border-top-left-radius   : 0;
+        border-bottom-left-radius: 0;
+        padding                  : 0px;
+        background-color         : #ffffff;
+
+        .logo {
+          align-items: center;
+
+          &>img {
+            margin-left: 20px;
+            width      : 80px;
+          }
+
+          &>p {
+            margin     : auto;
+            margin-left: 20px;
+          }
+        }
+
+        &>button {
+          height          : 45px;
+          margin-top      : 30px;
+          background-color: #0d47a1;
+          color           : #ffffff;
+        }
+
+        &>a {
+          color     : #0d47a1;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

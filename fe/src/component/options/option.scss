@@ -1,0 +1,35 @@
+.options {
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  min-width: 220px;
+  font-family: "oswald";
+  box-shadow: 0px 1px 5px 0px #333e50;
+  .options-container {
+    width: 100%;
+    .tag {
+      padding: 15px 40px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+      .tag-icon {
+        color: #0d47a1;
+        font-size: 20px;
+      }
+      &:hover {
+        border-left: 2px solid #0d47a1;
+        font-size: 20.5px;
+      }
+      & > span {
+        font-weight: bold;
+      }
+    }
+    hr {
+      height: 0;
+      width: 80%;
+      margin: auto;
+      border: 0.25px solid #0d47a1;
+    }
+  }
+}

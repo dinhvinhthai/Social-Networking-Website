@@ -1,0 +1,174 @@
+.User_Intro {
+    width            : 50%;
+    height           : auto;
+    background-color : #E5E5E5;
+    display          : grid;
+    padding          : 30px;
+    position         : fixed;
+    top              : 50%;
+    left             : 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    z-index          : 100;
+    font-size        : 18px;
+    font-family      : "oswald";
+
+    .headder {
+        display              : grid;
+        grid-template-columns: 1fr 1fr;
+
+        &>p {
+            font-size  : 18px;
+            font-weight: bold;
+
+        }
+
+        .buttonExit {
+            text-align: right;
+
+            &>button {
+                width           : 40px;
+                height          : 40px;
+                border-radius   : 50%;
+                border          : none;
+                background-color: #0D47A1;
+                font-size       : 25px;
+                color           : #fff;
+                cursor          : pointer;
+
+
+            }
+
+            &>button:hover {
+                color: red;
+            }
+
+        }
+    }
+
+    &>hr {
+        margin-top   : 10px;
+        margin-bottom: 10px;
+        border       : 1px solid black;
+    }
+
+    .intro {
+        display: grid;
+        width  : 100%;
+
+        .userInfos {
+            display              : grid;
+            grid-template-columns: 1fr 3fr;
+            padding              : 15px;
+            font-size            : 18px;
+            align-items          : center;
+            font-family          : "oswald";
+
+            .left {
+                display     : flex;
+                margin-right: 10px;
+                align-items : center;
+
+                &>span {
+                    padding-left: 10px;
+                }
+            }
+
+
+            .input_yearKey {
+                display              : grid;
+                grid-template-columns: 1fr 1fr;
+                align-items          : center;
+
+
+                &>input {
+                    width         : 90%;
+                    height        : 35px;
+                    border-radius : 10px;
+                    border        : none;
+                    box-shadow    : 10px 10px 10px lightblue;
+                    padding-left  : 20px;
+                    font-size     : 15px;
+                    text-transform: capitalize;
+                    font-family   : "oswald";
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .yearkey {
+                    display    : flex;
+                    align-items: center;
+
+                    &>span {
+                        margin-left : 10px;
+                        margin-right: 10px;
+                    }
+
+                    &>input {
+                        width         : 100%;
+                        height        : 35px;
+                        border-radius : 10px;
+                        border        : none;
+                        box-shadow    : 10px 10px 10px lightblue;
+                        padding-left  : 20px;
+                        font-size     : 15px;
+                        text-transform: capitalize;
+                        font-family   : "oswald";
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                }
+            }
+
+            &>input {
+                width         : 100%;
+                height        : 35px;
+                border-radius : 10px;
+                border        : none;
+                box-shadow    : 10px 10px 10px lightblue;
+                padding-left  : 20px;
+                font-size     : 16px;
+                text-transform: capitalize;
+                font-family   : "oswald";
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    &>button {
+        width              : 50%;
+        height             : 40px;
+        text-align         : center;
+        margin             : auto;
+        border             : none;
+        border-radius      : 15px;
+        font-size          : 18px;
+        // font-weight     : bold;
+        background-color   : #0D47A1;
+        color              : #fff;
+        font-family        : "oswald";
+        cursor             : pointer;
+
+    }
+}
+
+@media all and(max-width: 550px) {
+    .User_Intro {
+        width           : 510px;
+        height          : auto;
+        margin          : auto;
+        background-color: #E5E5E5;
+        display         : grid;
+        padding         : 30px;
+
+    }
+
+}

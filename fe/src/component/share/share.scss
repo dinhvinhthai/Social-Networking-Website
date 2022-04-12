@@ -1,0 +1,110 @@
+.share {
+  width        : 100%;
+  min-width:    550px;
+  border-radius: 30px;
+
+  .share-top {
+    box-shadow      : 0px 1px 4px 0px #333e50;
+    background-color: white;
+    border-radius   : 30px;
+    padding         : 10px 10px;
+    display         : flex;
+    justify-content : space-between;
+    gap             : 10px;
+
+    .share-left {
+      display    : flex;
+      flex       : 1;
+      gap        : 10px;
+      align-items: center;
+      height     : 35px;
+
+      .avatar {
+        height       : 35px;
+        width        : 35px;
+        border-radius: 50%;
+        object-fit   : cover;
+        margin-top   : 5px;
+      }
+
+      .share-left-content {
+        width  : 100%;
+        display: flex;
+        gap    : 10px;
+
+        &>input {
+          font-family: 'Roboto', sans-serif;
+          width      : 100%;
+          border     : none;
+          font-size  : 18px;
+          outline    : none;
+        }
+      }
+
+      &>input:focus {
+        outline: none;
+      }
+    }
+
+    .share-right {
+      display    : flex;
+      gap        : 0.5rem;
+      align-items: flex-start;
+      margin     : auto;
+
+      .share-btn {
+        color           : white;
+        padding         : 4px 10px;
+        background-color: #0d47a1;
+        border-radius   : 5rem;
+        display         : flex;
+        align-items     : center;
+        gap             : 8px;
+
+        &>span {
+          font-family: "Oswald";
+          font-style : normal;
+          font-weight: 400;
+          font-size  : 18px;
+          line-height: 27px;
+        }
+      }
+
+      .share-img {
+        font-size: 30px;
+        margin   : auto;
+        color    : #0d47a1;
+        font-size: 24px;
+        cursor   : pointer;
+      }
+
+      .share-img:hover {
+        color: #0b326d;
+      }
+
+      .share-btn:hover {
+        background-color: #0b326d;
+        cursor          : pointer;
+      }
+
+    }
+  }
+
+  .share-bottom {
+    box-shadow      : 0px 1px 4px 0px #333e50;
+    background-color: white;
+    margin          : 10px auto;
+    width           : 100%;
+    border-radius   : 30px;
+
+    .preview-container {
+      width : 50%;
+      margin: auto;
+
+      .preview-img {
+        padding: 10px 20px;
+        width  : 100%;
+      }
+    }
+  }
+}

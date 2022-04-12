@@ -1,0 +1,61 @@
+.fileupload {
+  position: fixed;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  .fileupload-container {
+    padding: 10px 5px;
+    background-color: white;
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    & > h1 {
+      margin: auto;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    & > img{
+      object-fit: cover;
+    }
+    .exit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: none;
+      color: #606770;
+      cursor: pointer;
+      &:hover {
+        background-color: #e6e6e6;
+      }
+    }
+    .photo-preview {
+      margin: auto;
+      flex-grow: 1;
+      height: 50%;
+      width: 90%;
+      object-fit: cover;
+    }
+    .uploadBtn {
+      cursor: pointer;
+      width: 120px;
+      height: 30px;
+      margin: auto;      
+    }
+    .uploadBtn:hover{
+      background-color: #c0c0c0;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.friends_request_tag {
+    background-color: #EEF0F5;
+    width           : 98%;
+    height          : 60px;
+    border-radius   : 12px;
+    display         : flex;
+    margin          : auto;
+    align-items     : center;
+    font-family     : "oswald";
+    padding         : 10px;
+
+    .avt_friend_request {
+        width           : 45px;
+        height          : 45px;
+        border-radius   : 50%;
+        // margin-left  : 10px;
+        margin-right    : 5px;
+        margin-top      : 4px;
+        object-fit      : cover;
+    }
+
+    .friend_request_tag_info {
+        height    : 55px;
+        text-align: center;
+
+        p {
+            margin        : 0;
+            text-transform: capitalize;
+            font-size     : 17px;
+            font-weight   : bold;
+            text-align    : center;
+            font-family   : "oswald";
+            text-align    : center;
+        }
+
+        .friend_request_tag_button {
+            display: flex;
+
+            .button_accept {
+                width           : 80px;
+                height          : 23px;
+                border          : none;
+                border-radius   : 15px;
+                background-color: #0d47a1;
+                color           : white;
+                margin-right    : 10px;
+                font-size       : 15px;
+                font-family     : "oswald";
+                cursor          : pointer;
+
+            }
+
+            .button_refuse {
+                width           : 80px;
+                height          : 23px;
+                border          : none;
+                border-radius   : 15px;
+                background-color: #c4c4c4;
+                font-weight     : bold;
+                font-size       : 15px;
+                margin-left     : 10px;
+                font-family     : "oswald";
+                cursor          : pointer;
+
+            }
+
+            .button_accept:hover {
+                background-color: #0b326d;
+            }
+
+            .button_refuse:hover {
+                background-color: white;
+            }
+        }
+    }
+}
+
+.friends_request_tag:hover {
+    width: 100%;
+}

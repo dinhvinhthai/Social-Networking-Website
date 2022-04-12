@@ -1,0 +1,66 @@
+.profile {
+  width    : 100vw;
+  max-width: 100%;
+
+  .profile-main {
+    margin-top    : 20px;
+    padding       : 0 10px;
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    padding       : 0 10px;
+    gap           : 30px;
+
+    .profile-left {}
+
+    .profile-right {
+      &>p {
+        font-size  : 20px;
+        text-align : center;
+        font-family: 'Oswald', sans-serif;
+        padding    : 10px 0;
+      }
+    }
+  }
+}
+
+@media all and(min-width:1024px) {
+  .profile {
+    .profile-main {
+      flex-direction : row;
+      justify-content: space-evenly;
+
+      .profile-left {
+        flex: 2;
+      }
+
+      .profile-right {
+        flex: 5;
+      }
+    }
+  }
+}
+
+@media all and(min-width:1250px) {
+  .profile {
+    .profile-main {
+      padding: 0 100px;
+
+      .profile-left {}
+
+      .profile-right {}
+    }
+  }
+}
+
+@media all and(min-width:1400px) {
+  .profile {
+    .profile-main {
+      padding: 0 200px;
+
+      .profile-left {}
+
+      .profile-right {}
+    }
+  }
+}

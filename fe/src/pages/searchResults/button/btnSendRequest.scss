@@ -1,0 +1,33 @@
+.icon {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 40px;
+    width           : 40px;
+    font-size       : 30px;
+    border-radius   : 50%;
+    background-color: rgba(120, 206, 209, 0.966);
+    margin-left     : 70%;
+    margin          : auto;
+    padding         : 8px;
+    border          : none;
+
+    &:hover {
+        background-color: rgb(14, 238, 238);
+    }
+}
+
+.icon2 {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 40px;
+    width           : 40px;
+    font-size       : 30px;
+    border-radius   : 50%;
+    background-color: #0d47a1 !important;
+    margin-left     : 70%;
+    margin          : auto;
+    padding         : 8px;
+    border          : none;
+}

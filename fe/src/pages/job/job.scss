@@ -1,0 +1,111 @@
+.job_container {
+  width      : 100%;
+  min-width  : 300px;
+  padding-top: 50px;
+  display    : flex;
+  font-family: "oswald";
+
+  .left_job {
+    display            : grid;
+    margin-top         : 40px;
+    width              : 250px;
+    background-color   : #ffff;
+    border-radius      : 14px;
+    height             : auto;
+    box-shadow         : 0px 2px 10px 0px #00000040;
+    padding-top        : 10px;
+    box-shadow         : 0px 2px 10px rgba(0, 0, 0, 0.25);
+    padding-bottom     : 20px;
+    // padding         : 10px;
+
+    .item {
+      width     : 100%;
+      height    : auto;
+      margin-top: 10px;
+      cursor    : pointer;
+      text-align: left;
+      height    : 50px;
+      display   : grid;
+      font-size : 17px;
+
+      &>span {
+        margin        : auto;
+        border-bottom : 2px solid #0D47A1;
+        width         : 90%;
+        height        : 50px;
+        font-weight   : bold;
+        padding-top   : 15px;
+        text-transform: uppercase;
+        padding-left  : 15px;
+        font-family   : "oswald";
+      }
+
+    }
+
+    &>.item:hover {
+      border-left: 2px solid #0D47A1;
+      font-size  : 18px;
+    }
+
+  }
+
+  .center_job {
+    width     : 625px;
+    height    : auto;
+    margin    : auto;
+    margin-top: 50px;
+    .job_tag{
+      height: max-content;
+    }
+  }
+}
+
+@media all and(min-width:1300px) {
+  .job_container {
+    display: flex;
+
+    .left_job {
+      position: fixed;
+      left    : 20px;
+    }
+
+
+  }
+}
+
+@media all and(max-width:1050px) {
+  .job_container {
+    display: grid;
+
+    .left_job {
+      width        : 90%;
+      margin       : auto;
+      border-radius: 10px;
+      margin-top   : 20px;
+      display      : flex;
+      height       : 50px;
+      padding-top  : 0;
+
+      .item {
+        text-align      : center;
+        margin-top      : 0;
+        background-color: #0D47A1;
+
+        &>span {
+          border-bottom   : 0;
+          width           : 99.9%;
+          background-color: #ffff;
+        }
+      }
+
+      &>.item:hover {
+        border-left: 0;
+
+      }
+    }
+
+    .center_job {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,241 @@
+.Groupt_box {
+    width              : 500px;
+    //display          : grid;
+    height             : 600px;
+    background-color   : #ffff;
+    border-radius      : 15px;
+    position           : fixed;
+    top                : 50%;
+    left               : 50%;
+    -webkit-transform  : translate(-50%, -50%);
+    transform          : translate(-50%, -50%);
+    z-index            : 100;
+    padding            : 10px;
+    box-shadow         : 0px 1px 5px 0px #333e50;
+
+    .exit {
+        width        : 100%;
+        height       : 40px;
+        display      : block;
+        border-bottom: 1px solid #ead8d8;
+
+
+        &>span {
+            color      : black;
+            font-size  : 18px;
+            font-family: "oswald";
+        }
+
+        &>button {
+            float        : right;
+            width        : 30px;
+            height       : 30px;
+            border-radius: 50%;
+            text-align   : center;
+            font-size    : 20px;
+            border       : none;
+            cursor       : pointer;
+        }
+
+        &>button:hover {
+            background-color: #9c9595;
+        }
+    }
+
+    .Groupt_info {
+        width      : 100%;
+        height     : 50px;
+        display    : flex;
+        align-items: center;
+        padding-top: 10px;
+
+        .image {
+            width           : 50px;
+            height          : 50px;
+            border-radius   : 50px;
+            background-color: #EAEAEA;
+            align-items     : center;
+            display         : flex;
+            font-size       : 25px;
+            margin-right    : 10px;
+            cursor          : pointer;
+
+            .icons {
+                margin: auto;
+            }
+        }
+
+        &>input {
+            width        : 100%;
+            height       : 50px;
+            flex         : 1;
+            border       : none;
+            border-bottom: 1px solid #ead8d8;
+            font-size    : 18px;
+            font-family  : "oswald";
+        }
+
+        &>input:focus {
+            outline: none;
+        }
+
+    }
+
+    .search_friend {
+        width      : 100%;
+        height     : 60px;
+        display    : grid;
+        padding-top: 10px;
+        font-family: "oswald";
+        color      : black;
+        font-size  : 18px;
+
+        .search {
+            display         : flex;
+            align-items     : center;
+            width           : 90%;
+            height          : 40px;
+            background-color: #EAEAEA;
+            margin          : auto;
+            border-radius   : 20px;
+            padding-left    : 10px;
+            font-size       : 20px;
+            color           : rgb(113, 60, 220);
+
+            &>input {
+                flex                      : 1;
+                width                     : 100%;
+                height                    : 100%;
+                border-top-right-radius   : 20px;
+                border-bottom-right-radius: 20px;
+                border                    : none;
+                background-color          : #EAEAEA;
+                font-size                 : 17px;
+                padding-left              : 5px;
+                font-family               : "oswald";
+                color                     : black;
+
+            }
+
+            &>input:focus {
+                outline: none;
+            }
+
+        }
+    }
+
+    .result {
+        width             : 100%;
+        height            : 40px;
+        //background-color: #333e50;
+        margin-top        : 20px;
+        padding-top       : 5px;
+        font-size         : 18px;
+        font-family       : "oswald";
+        color             : black;
+        font-weight       : bold;
+    }
+
+    .friendss {
+        width     : 100%;
+        height    : 350px;
+        border-top: 1px solid #9c9595;
+        display   : flex;
+
+        .my_friend {
+            width        : 60%;
+            height       : 100%;
+            overflow-y   : auto;
+            padding-top  : 10px;
+            padding-right: 10px;
+            font-size    : 18px;
+            font-family  : "oswald";
+
+            .friend_values {
+                width           : 100%;
+                height          : 50px;
+                padding-left    : 10px;
+                border-radius   : 10px;
+                display         : flex;
+                align-items     : center;
+                background-color: #EAEAEA;
+                margin-bottom   : 10px;
+                cursor          : pointer;
+
+                &>img {
+                    width        : 42px;
+                    height       : 42px;
+                    border-radius: 50%;
+
+                }
+
+                &>span {
+                    flex          : 1;
+                    padding-left  : 5px;
+                    text-transform: capitalize;
+                }
+
+                &>input {
+                    margin-right: 10px;
+                    cursor      : pointer;
+                }
+            }
+
+
+
+            &>input {
+                margin-right: 10px;
+            }
+        }
+
+        .friend_values:hover {
+            background-color: #9c9595
+        }
+
+
+        .choose_friend {
+            flex              : 1;
+            padding           : 10px;
+            border-left       : 1px solid #9c9595;
+            font-family       : "oswald";
+            font-size         : 18px;
+            height            : 100%;
+            display           : grid;
+            grid-template-rows: 10% 90%;
+
+            &>span {
+                text-decoration: underline;
+            }
+
+            .choosed {
+                width        : 100%;
+                height       : 100%;
+                margin-bottom: 10px;
+                overflow-y   : auto;
+
+                .info_fr {
+                    width           : 100%;
+                    height          : 40px;
+                    background-color: #9c9595;
+                    display         : flex;
+                    align-items     : center;
+                    border-radius   : 20px;
+                    padding-left    : 15px;
+
+                    &>img {
+                        width        : 35px;
+                        height       : 35px;
+                        border-radius: 50%;
+                        margin-right : 5px;
+                    }
+
+                    &>span {
+                        flex          : 1;
+                        font-size     : 17px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

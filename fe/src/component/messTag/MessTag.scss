@@ -1,0 +1,34 @@
+.messTag {
+    width              : 100%;
+    height             : 60px;
+    border-radius      : 10px;
+    cursor             : pointer;
+    display            : flex;
+    // background-color: #EAEAEA;
+    align-items        : center;
+    padding-left       : 10px;
+    margin-bottom      : 10px;
+
+    .avt_mess_tag {
+        width        : 50px;
+        height       : 50px;
+        border-radius: 50%;
+        object-fit   : cover;
+        margin-right : 10px;
+    }
+
+    &>span {
+        max-width     : 180px;
+        color         : black;
+        font-size     : 20px;
+        font-weight   : bold;
+        font-family   : "oswald";
+        text-transform: capitalize;
+        text-overflow : ellipsis;
+        overflow      : hidden;
+    }
+}
+
+.messTag:hover {
+    background-color: #EAEAEA;
+}
