@@ -15,5 +15,6 @@
   <li>Chat with friend</li>
   <li>Create Event</li>
   <li>Create Job</li>
+  <li>Notifications</li>
   <li>Comming soon...</li>
  </ul>
