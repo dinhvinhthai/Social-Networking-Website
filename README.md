@@ -10,7 +10,10 @@
   <li>Friend</li>
   <li>Search user</li>
   <li>Post text, image</li>
+  <li>Update, Delete post</li>
   <li>Like, comment a post</li>
   <li>Chat with friend</li>
+  <li>Create Event</li>
+  <li>Create Job</li>
   <li>Comming soon...</li>
  </ul>
