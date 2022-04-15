@@ -18,5 +18,5 @@
   <li>Notifications</li>
   <li>Comming soon...</li>
  </ul>
-  
-  <p>Link: <a href="https://www.youtube.com/watch?v=220Fsn1jGaQ&t=2s">Demo</a></p>
+  <p>Author: Pham Hoang Duy, Dinh Vinh Thai, Nguyen Trung Toan</p>
+  <p>Link Video: <a href="https://www.youtube.com/watch?v=220Fsn1jGaQ&t=2s">Demo</a></p>
